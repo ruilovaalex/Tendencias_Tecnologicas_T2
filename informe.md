@@ -71,7 +71,7 @@ docker cp nginx2:/usr/share/nginx/html/index.html ./index2.html
 Se guardó también una copia de las páginas originales antes de editarlas.
 
 ### Paso 3. Editar index1.html
-El archivo se editó con Vi en modo Ex. Se guardó el HTML con el nombre del Instituto Sudamericano, su ubicación y algunas de sus carreras. El contenido que quedó guardado se puede revisar en [index1.html](index1.html).
+El archivo se editó con Vi en modo Ex. Se guardó el HTML con el nombre del Instituto Sudamericano, su ubicación y algunas de sus carreras. El archivo quedó guardado en la carpeta de la práctica.
 
 ### Paso 4. Copiar la página institucional a nginx1
 ```bash
@@ -84,7 +84,7 @@ En index2.html se colocaron el nombre del estudiante, el instituto, la carrera, 
 ```bash
 docker cp index2.html nginx2:/usr/share/nginx/html/index.html
 ```
-El archivo completo está en [index2.html](index2.html). La página se abrió en http://localhost:8090/.
+La página se abrió en http://localhost:8090/.
 
 <img src="capturas/nginx2.jpg" alt="Pagina del estudiante servida por nginx2" width="800">
 
@@ -102,7 +102,7 @@ Ubuntu WSL se cerró entre algunas comprobaciones y los contenedores quedaron de
 ```bash
 docker start nginx1 nginx2
 ```
-La salida de la comprobación final está en [verificacion.txt](verificacion.txt).
+La salida de la comprobación final quedó guardada en el computador.
 
 ## 9. Resultados esperados
 Al terminar quedaron dos servidores con contenido diferente:
@@ -112,7 +112,7 @@ Al terminar quedaron dos servidores con contenido diferente:
 | nginx1 | 8089 | Información del Instituto Sudamericano |
 | nginx2 | 8090 | Datos de Wilmer Alexander Ruilova Merchan |
 
-Las dos páginas abren desde Windows y muestran el contenido editado. No fue necesario instalar Docker Desktop, porque Docker ya funcionaba dentro de Ubuntu WSL. Los archivos HTML y las capturas quedaron guardados junto al informe.
+Las dos páginas abren desde Windows y muestran el contenido editado. No fue necesario instalar Docker Desktop, porque Docker ya funcionaba dentro de Ubuntu WSL. Los archivos HTML quedaron guardados en el computador. El informe y las capturas se subieron a GitHub.
 
 Las capturas de las figuras 1 y 2 muestran las páginas finales. Las direcciones localhost funcionan en este computador mientras Ubuntu y los contenedores estén activos; no son enlaces públicos para el docente.
 
